@@ -15,7 +15,7 @@
 
   <!-- include spec files here... -->
   <script type="text/javascript" src="spec/SpecHelper.js"></script>
-  <script type="text/javascript" src="spec/LearnerSpec.js"></script>
+  <script type="text/javascript" src="spec/LearnerSpec.js"></script>  
 
   <script type="text/javascript">
     (function() {
@@ -43,11 +43,26 @@
         jasmineEnv.execute();
       }
 
-    })();
+    })(); 
   </script>
 
 </head>
 
 <body>
+
+  <table style="" class="racer_table"> <tr id="player1_strip">
+    <td> 1 </td>
+    <td class="active"> A </td> 
+    <td> 1</td>
+    <td> 1</td>
+
+  </tr>
+  <tr id="player2_strip">
+    <td> 2 </td>
+    <td> 2</td>
+    <td> 2</td>
+    <td class="active"> A </td>
+  </tr> </table>
+
 </body>
 </html>

@@ -72,6 +72,3 @@ $(document).ready(function() { $(document).on('keyup', function(event) {
 ###Starting and Winning States
 
 The last bit is to have starting and winning states, so we can restart the game and declare a winner when the game is over. Add these features (starting, playing, winning, and restarting) and submit your solution as a gist with at least three files: an HTML file, a CSS file, and a JavaScript file. You can have more files, but all CSS and JavaScript should be linked externally from the HTML file.
-
-
-
