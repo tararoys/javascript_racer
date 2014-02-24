@@ -9,4 +9,11 @@ describe("How many questions need answers before I can ship a completed app?", f
     expect(answer).not.toBe(null);
   });
 
+  it("How do I get javascript to show multiline strings like Ruby's heredoc?", function(){
+    var link = "http://stackoverflow.com/questions/805107/creating-multiline-strings-in-javascript"
+    var answer = "like \
+                  this" //does not work in all broswers
+    expect(answer).not.toBe(null);
+  })
+
 });
