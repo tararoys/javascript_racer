@@ -42,4 +42,11 @@ describe("How many questions need answers before I can ship a completed app?", f
       link = "[How do I select an element within a specific element in css](http://stackoverflow.com/questions/6933763/how-do-i-select-item-with-class-within-a-div-in-jquery)"
       expect(answer).not.toBe(null);
     });
+
+  it("How do I move the active class manually?", function(){
+    answer = "get class='active' from one table row and move it to another."
+    expect(answer).not.toBe(null);
+    error = {"Uncaught SyntaxError: Unexpected token function": "forgot a comma"}
+
+  });
 });
