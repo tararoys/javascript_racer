@@ -62,11 +62,13 @@ Use something like [normalize.css](http://necolas.github.com/normalize.css/) to 
 
 ###Add Javascript
 
-Now we need some way for JavaScript to update the board state. Create simple JavaScript functions that can update a particular player's position. Y ou give the functions a player position as input and they update the underlying HTML to reflect the new position.
+Now we need some way for JavaScript to update the board state. Create simple JavaScript functions that can update a particular player's position. You give the functions a player position as input and they update the underlying HTML to reflect the new position.
 It could look something like:
+
 
 ```
 update_player_position('player1', 10);
+
 ```
 
 Store this JavaScript in a separate file and use the JavaScript console to debug it and pass in values manually.
