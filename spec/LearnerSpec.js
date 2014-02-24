@@ -115,6 +115,7 @@ describe("How many questions need answers before I can ship a completed app?", f
       var selector = "#player" + player_number + "_strip td";
       return $(selector).last().hasClass("active");
     }
+    
     expect(PlayerWon("1")).toBe(false);
 
     $("#player1_strip td").last().addClass("active");
