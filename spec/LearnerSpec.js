@@ -157,6 +157,28 @@ describe("How many questions need answers before I can ship a completed app?", f
 
   })
 
-  
+  it("How do I recognize when somebody has pressed a key?", function(){
+    var links = "http://stackoverflow.com/questions/7005162/jquery-capture-an-enter-key-pressed-anywhere-on-the-page"
+    var keypress = 0
+    
+    $(document).on("keyup", function(event){
+        keypress = keypress + 1
+     });
+
+    var link = "[How to simulate a key up](http://stackoverflow.com/questions/596481/simulate-javascript-key-events)"
+    
+    function simulateKeyPress(character) {
+       jQuery.event.trigger({ type : 'keyup', which : character.charCodeAt(0) });
+      }
+
+    simulateKeyPress("l");
+    simulateKeyPress("l");
+     
+    expect(keypress).toBe(2);  
+   
+  })
+
+
+
 
 });
