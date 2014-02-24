@@ -15,10 +15,16 @@ describe("How many questions need answers before I can ship a completed app?", f
                   this" //does not work in all broswers
     expect(answer).not.toBe(null);
   });
+
   it("How do you add style attributes to html elements without using a full stylesheet?", function(){
     var answer = "Just add a full stylesheet already. But if you really want to know, open yourjavascript console (cmd-option-j) and [edit the stylesheet attribute](http://stackoverflow.com/questions/3783186/how-do-i-edit-css-in-chrome-like-in-firebug-for-firefox)."
     var asnwer2 ="To add a stylesheet, look at the changes made in this commit"
     expect(answer).not.toBe(null)
+  });
+
+  it("How do I made the table pretty enough that I don't get annoyed every time I look at it?", function(){
+    var answer = "No, still annoyed, but don't know enough css to fix this quickly and it's not a core feature. Moving on.";
+    expect(answer).not.toBe(null);
   });
 
 
