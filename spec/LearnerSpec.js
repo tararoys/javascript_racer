@@ -67,4 +67,12 @@ describe("How many questions need answers before I can ship a completed app?", f
         var music_I_am_listening_to = "http://www.youtube.com/watch?v=6Dy74NOzcS8&list=PLoDSkbY6ygMGfgDAQsS7daY2h9rfjSMvZ"
     });
 
+  it("How do I put jasmine-jquery into my existing skeleton?", function(){
+      answer = "Copy jasmine-jquery and jquery-1.11.0.min.js into this project's spec folder. Add the libraries to the Specrunner. (read this commmit to see what I added where.  Then tyr selecting something with jquery and seeing if it exists."
+      expect($('#player1_strip')).toExist();
+      expect(answer).not.toBe(null);
+
+  })
+
+
 });
