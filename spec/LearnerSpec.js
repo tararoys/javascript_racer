@@ -91,6 +91,22 @@ describe("How many questions need answers before I can ship a completed app?", f
 
     });
 
+  it("Will psuedocoding out what I want to happen help me decide what I want to do next?", function(){
+      var observation = "I am having trouble remembering what I'm supposed to do next";
+      var psuedocode = "read the following comment"
+      // At the beginning of the game, the two first squares are highlighted. 
+      //    if neither player has won, 
+      //      when player 1 presses her key, 
+      //         the blue car moves forward one space
+      //        when player 2 presses his key, 
+      //          the red car moves forward one space 
+      //
+      //      
+      //A player has won when they have reached the end of the track   
+      answer = "yes"
+      expect(answer).toEqual("yes");   
+  });
+
 
 
 });
