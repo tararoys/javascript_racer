@@ -72,7 +72,12 @@ describe("How many questions need answers before I can ship a completed app?", f
       expect($('#player1_strip')).toExist();
       expect(answer).not.toBe(null);
 
-  })
+  });
 
-
+  it("How do I get rid of the active class on every element?", 
+    function(){
+      //probably a good place to have a fixture later.
+      $('#player1_strip td').removeClass('active');
+      expect('#player1_strip td').not.toHaveClass('active');
+    })
 });
