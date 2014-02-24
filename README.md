@@ -1,3 +1,17 @@
+To run this project on Google Chrome on MacOs:
+
+1. Close google chrome entirely. 
+2. Go to the terminal. 
+3. Find google chrome in your applications folder. It's probably in a directory like this:
+
+   "/Applications/GoogleChrome.app/Contents/MacOS/Google Chrome"
+
+4. Launch google chrome with the following commands: 
+
+    > "/Applications/GoogleChrome.app/Contents/MacOS/Google Chrome" --allow-file-access-from-files SpecRunner.html 
+
+If you don't follow these steps, jasmine jquery will error out on you. 
+
 
 #JavaScript Racer 1: Front-end Challenge
 
