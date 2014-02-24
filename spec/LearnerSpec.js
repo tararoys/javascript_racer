@@ -81,6 +81,15 @@ describe("How many questions need answers before I can ship a completed app?", f
       expect($('#player1_strip td')).not.toHaveClass('active');
     })
 
+  it("I have highlighted an element. How to I highlight the element right next to it?", function(){
+      //probably anohter good place to have a fixture later
+      observation = "Is it reasonalbe to expect newbies to be able to understand the keyword traversal in order to find the next method?"
+      link = "[the next method](http://api.jquery.com/next/)"
+      next = $('#player2_strip td.active').next();
+      next.addClass('active');
+      expect(next).toHaveClass('active');
+
+    });
 
 
 
