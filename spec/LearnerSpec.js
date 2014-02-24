@@ -25,7 +25,19 @@ describe("How many questions need answers before I can ship a completed app?", f
   it("How do I made the table pretty enough that I don't get annoyed every time I look at it?", function(){
     var answer = "No, still annoyed, but don't know enough css to fix this quickly and it's not a core feature. Moving on.";
     expect(answer).not.toBe(null);
+    //watching the number of mistakes I make trying to do this, I now deeply mistrust any untested code. 
   });
+
+  it("How do I deal with the fact that every open screen makes it exponentially harder for me to keep track of where I am?", function(){
+    var answer = "close all unecessary tabs"
+    var answer2 = "stop playing meditation music and play concentration music"
+    var answer3 = "[video game musicians really know how to make good thinking music](http://www.youtube.com/watch?v=OLdfuxzwI6k&list=PLoDSkbY6ygMGfgDAQsS7daY2h9rfjSMvZ)"
+    expect(answer).not.toBe(null); 
+  })
+  
+
+
+  it()
 
 
 });
