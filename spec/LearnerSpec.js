@@ -179,7 +179,21 @@ describe("How many questions need answers before I can ship a completed app?", f
    
   });
 
-  
+  it("How do I declare a winner?", function(){
+    $("#player1_strip").addClass("active");
+
+    function DeclareWinner(player_number){
+      $("#declare_winner").text("Player " + player_number + " wins!"); 
+    }
+
+    DeclareWinner("1");
+
+    expect($("#declare_winner").text()).toBe("Player 1 wins!");
+
+     $("#declare_winner").text(""); 
+  })
+
+
 
   it("how do I reset the game so that somebody can play?", function(){
     SetUpGame();
