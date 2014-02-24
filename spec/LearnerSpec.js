@@ -107,6 +107,23 @@ describe("How many questions need answers before I can ship a completed app?", f
       expect(answer).toEqual("yes");   
   });
 
+  it("How do I determine if a player has won?", function(){
+    var answer = "Check to see if the last cell  in their strip has a class active."
+    var link = "[checking if an element has a class](http://api.jquery.com/hasClass/)"
+    
+    function PlayerWon( player_number ){
+      var selector = "#player" + player_number + "_strip td";
+      return $(selector).last().hasClass("active");
+    }
+    expect(PlayerWon("1")).toBe(false);
+
+    $("#player1_strip td").last().addClass("active");
+
+    expect(PlayerWon("1")).toBe(true);
+   
+    expect(answer).not.toEqual("null")
+  })
+
 
 
 });
