@@ -124,6 +124,19 @@ describe("How many questions need answers before I can ship a completed app?", f
     expect(answer).not.toEqual("null")
   })
 
+  it("How do I set up the game board?", function(){
+    var answer = "Make sure the active class is on the first two cells";
 
+    function SetUpGame(){
+      $("#racetrack .active").removeClass("active");
+      $("#player1_strip").children().first().addClass("active");
+      $("#player2_strip").children().first().addClass("active");
+    }
+
+    SetUpGame();
+
+    expect($("#player1_strip").children().first()).toHaveClass("active");
+    expect($("#player2_strip").children().first()).toHaveClass("active");
+   })
 
 });
