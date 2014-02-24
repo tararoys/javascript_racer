@@ -8,3 +8,11 @@
   background-color: blue;
   color: white;
 }
+
+#player1_strip .active {
+  background-color: pink;
+}
+
+#player2_strip .active{
+  background-color: aliceblue;
+}

@@ -33,11 +33,13 @@ describe("How many questions need answers before I can ship a completed app?", f
     var answer2 = "stop playing meditation music and play concentration music"
     var answer3 = "[video game musicians really know how to make good thinking music](http://www.youtube.com/watch?v=OLdfuxzwI6k&list=PLoDSkbY6ygMGfgDAQsS7daY2h9rfjSMvZ)"
     expect(answer).not.toBe(null); 
-  })
-  
+  });
 
-
-  it()
-
-
+  it("How do I show the car's position on the track?", function(){
+      answer = "Have the row with the active class be a different color"
+      css_classes_are_like = "Family names. Family names are a way of telling which people belong to a particular family of people. When you say the 'roys', you know you are talking about a group of people, and that you are dealing with them as a group."
+      css_selectors_are_like = "pollsters looking for rich urban middle class people for their survey.  The pollster will not talk to you unless you fit all of the characteristics"
+      link = "[How do I select an element within a specific element in css](http://stackoverflow.com/questions/6933763/how-do-i-select-item-with-class-within-a-div-in-jquery)"
+      expect(answer).not.toBe(null);
+    });
 });
