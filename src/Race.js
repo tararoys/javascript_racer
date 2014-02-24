@@ -15,6 +15,10 @@ function PlayerWon( player_number ){
   return $(selector).last().hasClass("active");
 }
 
+function DeclareWinner(player_number){
+  $("#declare_winner").text("Player " + player_number + " wins!"); 
+}
+
 $(document).on("keyup", function(event){
   
   if (!(PlayerWon(1)) && !(PlayerWon(2))){
@@ -22,13 +26,13 @@ $(document).on("keyup", function(event){
     if(event.keyCode === 76){
       UpdatePosition("1");
       if (PlayerWon("1") === true){
-        console.log("Player 1 won");
+        DeclareWinner("1");
       }
     }
     if(event.keyCode === 65){
       UpdatePosition("2");
       if (PlayerWon("2") === true){
-        console.log("Player 2 won");
+        DeclareWinner("2");
       }
     }
    }
