@@ -47,6 +47,24 @@ describe("How many questions need answers before I can ship a completed app?", f
     answer = "get class='active' from one table row and move it to another."
     expect(answer).not.toBe(null);
     error = {"Uncaught SyntaxError: Unexpected token function": "forgot a comma"}
-
   });
+
+  it("Where the heck did I put my notes on how to integrate jasmine-jquery to a jasmine skeleton?", function(){
+      var observation ="It is demoralizing to know you did something once and then can't find it. It's like misplacing your keys for the hundredth time."
+      var step1 = "Found the [issue I submitted](https://github.com/velesin/jasmine-jquery/issues/179#issue-27409168) after I debugged jasmine-jquery chrome startup issue. I submitted it 13 days ago, on Feb 11."
+      var step2 = {"question": "How do I find files I created 13 days ago?", 
+                "answer": "http://stackoverflow.com/questions/10898154/grep-inside-all-files-created-within-date-range"
+              }
+       var step3 = "Run that command inside ~/Desktop/GiantFolderOfDoom"
+       var step4 = "Eyeball and look for jasmine jquery"
+      
+       var answer = "found it: GiantFolderOfDoom/WednesdaySideProjects/Git_Workflow_tutorial/tests"
+
+       var step5 = "Realized if I had read step 1 instead of being annoyed by having lost it, I would have found the jasmine command a lot sooner."
+       var command = "/Applications/GoogleChrome.app/Contents/MacOS/GoogleChrome --allow-file-access-from-files SpecRunner.html"
+       expect(answer).not.toBe(null) ;
+
+        var music_I_am_listening_to = "http://www.youtube.com/watch?v=6Dy74NOzcS8&list=PLoDSkbY6ygMGfgDAQsS7daY2h9rfjSMvZ"
+    });
+
 });
