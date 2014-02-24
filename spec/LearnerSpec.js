@@ -139,4 +139,24 @@ describe("How many questions need answers before I can ship a completed app?", f
     expect($("#player2_strip").children().first()).toHaveClass("active");
    })
 
+  it("How do I move a player forward one space?", function(){
+      var links = "http://api.jquery.com/children/, http://api.jquery.com/first/"
+
+      function UpdatePosition(player_number){
+        selector = "#player" + player_number + "_strip .active"
+        $(selector).next().addClass("active");
+
+      }
+
+    UpdatePosition("1")
+    UpdatePosition("2")
+    UpdatePosition("1")
+
+    expect($("#player1_strip").children().first().next().next()).toHaveClass("active");
+    expect($("#player2_strip").children().first().next()).toHaveClass("active");
+
+  })
+
+  
+
 });
